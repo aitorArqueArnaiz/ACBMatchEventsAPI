@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ACBMatchEventsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e017612e0d77b5174aef73b629469e81c7001b15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7222fce8eafab81de58a5dd893a41a45372bd4a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ACBMatchEventsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ACBMatchEventsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

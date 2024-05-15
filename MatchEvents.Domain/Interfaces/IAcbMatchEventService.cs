@@ -6,7 +6,7 @@ namespace MatchEvents.Domain.Interfaces
     {
         Task<MatchEventInfo> GetPhpLeanAsync(int gameId);
         Task<IEnumerable<int>> GetGameLeadersAsync(int gameId);
-        Task<int> GetGameBiggestLeadAsync(int gameId);
+        Task<long> GetGameBiggestLeadAsync(int gameId);
 
     }
 }

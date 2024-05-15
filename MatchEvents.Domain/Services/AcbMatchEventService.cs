@@ -1,11 +1,19 @@
-﻿using MatchEvents.Domain.Dtos;
+﻿using MatchEvent.Domain.Interfaces;
+using MatchEvents.Domain.Dtos;
 using MatchEvents.Domain.Interfaces;
 
 namespace MatchEvents.Domain.Services
 {
     public class AcbMatchEventService : IAcbMatchEventService
     {
-        public Task<int> GetGameBiggestLeadAsync(int gameId)
+        private readonly IMatchEventApiRestRepository _matchEventApiRestRepository;
+
+        public AcbMatchEventService(IMatchEventApiRestRepository matchEventApiRestRepository)
+        {
+            _matchEventApiRestRepository = matchEventApiRestRepository;
+        }
+
+        public async Task<long> GetGameBiggestLeadAsync(int gameId)
         {
             throw new NotImplementedException();
         }
@@ -15,9 +23,10 @@ namespace MatchEvents.Domain.Services
             throw new NotImplementedException();
         }
 
-        public Task<MatchEventInfo> GetPhpLeanAsync(int gameId)
+        public async Task<MatchEventInfo> GetPhpLeanAsync(int gameId)
         {
-            throw new NotImplementedException();
+            var matches = await _matchEventApiRestRepository.GetAcbMatchEventAsync(gameId);
+            return matches;
         }
     }
 }

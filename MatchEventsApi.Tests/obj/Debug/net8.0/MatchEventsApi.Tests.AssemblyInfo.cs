@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MatchEventsApi.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e38caf2f84e8b90835ea2a4814744cd7dba5bf3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7222fce8eafab81de58a5dd893a41a45372bd4a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MatchEventsApi.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MatchEventsApi.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

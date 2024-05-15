@@ -31,3 +31,8 @@ C:\GIT\ACBMatchEventsAPI\obj\Debug\net8.0\refint\ACBMatchEventsAPI.dll
 C:\GIT\ACBMatchEventsAPI\obj\Debug\net8.0\ACBMatchEventsAPI.pdb
 C:\GIT\ACBMatchEventsAPI\obj\Debug\net8.0\ACBMatchEventsAPI.genruntimeconfig.cache
 C:\GIT\ACBMatchEventsAPI\obj\Debug\net8.0\ref\ACBMatchEventsAPI.dll
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvent.Repository.dll
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvents.Domain.dll
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvent.Repository.pdb
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvents.Domain.pdb
