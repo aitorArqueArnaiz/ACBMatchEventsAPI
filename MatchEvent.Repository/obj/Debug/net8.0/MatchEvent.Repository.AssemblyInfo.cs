@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MatchEvent.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7222fce8eafab81de58a5dd893a41a45372bd4a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d158c3cc9b4a0813f4644ceeb69e9fa0906552a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MatchEvent.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MatchEvent.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

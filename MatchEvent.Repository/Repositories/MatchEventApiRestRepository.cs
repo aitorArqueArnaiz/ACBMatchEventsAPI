@@ -2,7 +2,6 @@
 using MatchEvents.Domain.Dtos;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 
 namespace MatchEvent.Repository.Repositories
 {
@@ -16,6 +15,11 @@ namespace MatchEvent.Repository.Repositories
             return await GetMatchEventInformationAsyncAsync(gameId);
         }
 
+        /// <summary>
+        /// Gets the JSON content of the API Rest call.
+        /// </summary>
+        /// <param name="gameId">The game identifier.</param>
+        /// <returns></returns>
         private async Task<MatchEventInfo> GetMatchEventInformationAsyncAsync(int gameId)
         {
             var userJson = await GetStringAsync(BaseUrl + "idMatch=" + gameId, Token);
@@ -23,14 +27,32 @@ namespace MatchEvent.Repository.Repositories
             return user;
         }
 
-        private async Task<string> GetStringAsync(string url, string token)
+        /// <summary>
+        /// Method that getsnthe string content from API call reesponse.
+        /// </summary>
+        /// <param name="url">The ACB API rest url.</param>
+        /// <param name="token">The bearer security token.</param>
+        /// <returns></returns>
+        private async static Task<string> GetStringAsync(string url, string token)
         {
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Authorization
                              = new AuthenticationHeaderValue("Bearer", token);
-                var response = await httpClient.GetFromJsonAsync<string>(url);
-                return response;
+                var response = await httpClient.GetStreamAsync(url);
+                
+                return await SerializeJsonResponse(response);
+            }
+        }
+
+        private async static Task<string> SerializeJsonResponse(Stream responseData)
+        {
+            var serializer = new JsonSerializer();
+            using (var sr = new StreamReader(responseData))
+            using (var jsonTextReader = new JsonTextReader(sr))
+            {
+                var data = serializer.Deserialize(jsonTextReader);
+                return JsonConvert.SerializeObject(data, Formatting.Indented);
             }
         }
     }
