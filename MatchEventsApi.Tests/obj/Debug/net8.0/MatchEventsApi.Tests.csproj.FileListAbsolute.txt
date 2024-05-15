@@ -198,8 +198,8 @@ C:\Users\aitor\OneDrive\Documentos\ACBMatchEvents\MatchEventsApi.Tests\obj\Debug
 C:\Users\aitor\OneDrive\Documentos\ACBMatchEvents\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.genruntimeconfig.cache
 C:\Users\aitor\OneDrive\Documentos\ACBMatchEvents\MatchEventsApi.Tests\obj\Debug\net8.0\ref\MatchEventsApi.Tests.dll
 C:\Users\aitor\OneDrive\Documentos\ACBMatchEvents\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.sourcelink.json
-C:\GIT\MatchEventsApi.Tests\bin\Debug\net8.0\testhost.exe
 C:\GIT\MatchEventsApi.Tests\bin\Debug\net8.0\testhost.dll
+C:\GIT\MatchEventsApi.Tests\bin\Debug\net8.0\testhost.exe
 C:\GIT\MatchEventsApi.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\GIT\MatchEventsApi.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\GIT\MatchEventsApi.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
@@ -291,6 +291,7 @@ C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.GeneratedMSBui
 C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.AssemblyInfoInputs.cache
 C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.AssemblyInfo.cs
 C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.csproj.CoreCompileInputs.cache
+C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.sourcelink.json
 C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEve.602E5D3A.Up2Date
 C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\MatchEventsApi.Tests.dll
 C:\GIT\MatchEventsApi.Tests\obj\Debug\net8.0\refint\MatchEventsApi.Tests.dll

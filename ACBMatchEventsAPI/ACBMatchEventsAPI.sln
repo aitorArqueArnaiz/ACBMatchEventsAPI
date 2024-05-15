@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34526.213
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACBMatchEventsAPI", "ACBMatchEventsAPI.csproj", "{F77E0A0B-7682-4D7F-A15E-5987D846DEB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACBMatchEventsAPI", "ACBMatchEventsAPI.csproj", "{F77E0A0B-7682-4D7F-A15E-5987D846DEB1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchEvents.Domain", "..\MatchEvents.Domain\MatchEvents.Domain.csproj", "{B607D5DE-D3AC-436E-9415-2C73E89FB49B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchEvent.Repository", "..\MatchEvent.Repository\MatchEvent.Repository.csproj", "{3EBE3276-4C49-41E7-8AC5-65DE3C82CC67}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchEventsApi.Tests", "..\MatchEventsApi.Tests\MatchEventsApi.Tests.csproj", "{CB5D0A49-A164-4E5C-A138-E61FB7AE9E5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

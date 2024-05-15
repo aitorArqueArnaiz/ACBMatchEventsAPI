@@ -56,6 +56,7 @@ C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEvent.Repository.GeneratedMSB
 C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEvent.Repository.AssemblyInfoInputs.cache
 C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEvent.Repository.AssemblyInfo.cs
 C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEvent.Repository.csproj.CoreCompileInputs.cache
+C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEvent.Repository.sourcelink.json
 C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEve.AD5BA12F.Up2Date
 C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\MatchEvent.Repository.dll
 C:\GIT\MatchEvent.Repository\obj\Debug\net8.0\refint\MatchEvent.Repository.dll

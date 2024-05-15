@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "C:\\GIT\\ACBMatchEventsAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}|Elementos de la soluci\u00F3n{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}|C:\\GIT\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}|Elementos de la soluci\u00F3n{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}|C:\\GIT\\ACBMatchEventsAPI\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}|Elementos de la soluci\u00F3n{749BC98C-B4E2-44D7-931B-3D3FA70C4F77}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3EBE3276-4C49-41E7-8AC5-65DE3C82CC67}|..\\MatchEvent.Repository\\MatchEvent.Repository.csproj|c:\\git\\matchevent.repository\\repositories\\matcheventapirestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,6 +29,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\GIT\\.gitignore",
+              "RelativeDocumentMoniker": "..\\.gitignore",
+              "ToolTip": "C:\\GIT\\.gitignore",
+              "RelativeToolTip": "..\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-15T12:32:34.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\GIT\\ACBMatchEventsAPI\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\GIT\\ACBMatchEventsAPI\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-05-15T12:27:09.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MatchEventApiRestRepository.cs",
               "DocumentMoniker": "C:\\GIT\\MatchEvent.Repository\\Repositories\\MatchEventApiRestRepository.cs",
               "RelativeDocumentMoniker": "..\\MatchEvent.Repository\\Repositories\\MatchEventApiRestRepository.cs",

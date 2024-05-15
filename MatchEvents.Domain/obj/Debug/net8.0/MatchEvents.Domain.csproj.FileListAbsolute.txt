@@ -41,6 +41,7 @@ C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.GeneratedMSBuildEd
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.AssemblyInfoInputs.cache
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.AssemblyInfo.cs
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.csproj.CoreCompileInputs.cache
+C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.sourcelink.json
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.dll
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\refint\MatchEvents.Domain.dll
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.pdb
