@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aGsaXba3RVg8i64AKsut3f/efY2TNMu22TJ9JJyU9B4=",
+  "Source": "ACBMatchEventsAPI",
+  "BasePath": "_content/ACBMatchEventsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

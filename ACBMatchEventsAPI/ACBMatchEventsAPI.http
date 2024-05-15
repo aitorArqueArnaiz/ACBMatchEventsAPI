@@ -1,0 +1,6 @@
+@ACBMatchEventsAPI_HostAddress = http://localhost:5159
+
+GET {{ACBMatchEventsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
