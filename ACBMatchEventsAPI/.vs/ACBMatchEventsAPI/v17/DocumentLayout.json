@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\GIT\\ACBMatchEventsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F77E0A0B-7682-4D7F-A15E-5987D846DEB1}|ACBMatchEventsAPI.csproj|c:\\git\\acbmatcheventsapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{F77E0A0B-7682-4D7F-A15E-5987D846DEB1}|ACBMatchEventsAPI.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B607D5DE-D3AC-436E-9415-2C73E89FB49B}|..\\MatchEvents.Domain\\MatchEvents.Domain.csproj|c:\\git\\matchevents.domain\\services\\acbmatcheventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,32 +29,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\GIT\\ACBMatchEventsAPI\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\GIT\\ACBMatchEventsAPI\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-05-15T12:43:42.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AcbMatchEventService.cs",
               "DocumentMoniker": "C:\\GIT\\MatchEvents.Domain\\Services\\AcbMatchEventService.cs",
               "RelativeDocumentMoniker": "..\\MatchEvents.Domain\\Services\\AcbMatchEventService.cs",
               "ToolTip": "C:\\GIT\\MatchEvents.Domain\\Services\\AcbMatchEventService.cs",
               "RelativeToolTip": "..\\MatchEvents.Domain\\Services\\AcbMatchEventService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T12:41:18.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MatchEventController.cs",
               "DocumentMoniker": "C:\\GIT\\ACBMatchEventsAPI\\Controllers\\MatchEventController.cs",
               "RelativeDocumentMoniker": "Controllers\\MatchEventController.cs",
@@ -71,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MatchEventApiRestRepository.cs",
               "DocumentMoniker": "C:\\GIT\\MatchEvent.Repository\\Repositories\\MatchEventApiRestRepository.cs",
               "RelativeDocumentMoniker": "..\\MatchEvent.Repository\\Repositories\\MatchEventApiRestRepository.cs",
