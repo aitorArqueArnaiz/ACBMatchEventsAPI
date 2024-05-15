@@ -26,7 +26,7 @@ namespace MatchEvents.Domain.Services
         public async Task<MatchEventInfo> GetPhpLeanAsync(int gameId)
         {
             var matches = await _matchEventApiRestRepository.GetAcbMatchEventAsync(gameId);
-            return matches;
+            
         }
     }
 }

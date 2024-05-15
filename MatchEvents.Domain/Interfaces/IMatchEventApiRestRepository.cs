@@ -4,5 +4,5 @@ namespace MatchEvent.Domain.Interfaces;
 
 public interface IMatchEventApiRestRepository
 {
-    Task<MatchEventInfo> GetAcbMatchEventAsync(int gameId);
+    Task<IEnumerable<MatchEventInfo>> GetAcbMatchEventAsync(int gameId);
 }

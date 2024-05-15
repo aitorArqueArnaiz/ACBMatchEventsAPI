@@ -10,3 +10,4 @@ C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.dll
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\refint\MatchEvents.Domain.dll
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.pdb
 C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\ref\MatchEvents.Domain.dll
+C:\GIT\MatchEvents.Domain\obj\Debug\net8.0\MatchEvents.Domain.csproj.AssemblyReference.cache

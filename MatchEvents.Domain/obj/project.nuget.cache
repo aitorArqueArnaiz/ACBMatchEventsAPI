@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "A75Mfm1ZhlodsJhj6+XKoOGHG7+JOCku79dgn/5I6nW9fLbzeEfdbYyvcMYBzFlC3x6mxoiC/Aob6KRS5bMdag==",
+  "dgSpecHash": "htJneWD6NgUyKyx2xQzTXDN+FnoUouYDvhBUH5IbjylXmyipQmUdDMbN7p4oAfCqJDVoqBhswkm98C7KQqklDw==",
   "success": true,
   "projectFilePath": "C:\\GIT\\MatchEvents.Domain\\MatchEvents.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aitor\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
