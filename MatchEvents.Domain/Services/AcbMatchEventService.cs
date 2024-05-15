@@ -7,10 +7,14 @@ namespace MatchEvents.Domain.Services
     public class AcbMatchEventService : IAcbMatchEventService
     {
         private readonly IMatchEventApiRestRepository _matchEventApiRestRepository;
+        private readonly IRepository _inMemmoryRepositoryCache;
 
-        public AcbMatchEventService(IMatchEventApiRestRepository matchEventApiRestRepository)
+        public AcbMatchEventService(
+            IMatchEventApiRestRepository matchEventApiRestRepository,
+            IRepository inMemmoryRepository)
         {
             _matchEventApiRestRepository = matchEventApiRestRepository;
+            _inMemmoryRepositoryCache = inMemmoryRepository;
         }
 
         public async Task<long> GetGameBiggestLeadAsync(int gameId)
@@ -23,10 +27,19 @@ namespace MatchEvents.Domain.Services
             throw new NotImplementedException();
         }
 
-        public async Task<MatchEventInfo> GetPhpLeanAsync(int gameId)
+        public async Task<IEnumerable<MatchEventInfo>> GetPhpLeanAsync(int gameId)
         {
-            var matches = await _matchEventApiRestRepository.GetAcbMatchEventAsync(gameId);
-            
+            var existingInfo = await _inMemmoryRepositoryCache.GetMatchEventsAsync(gameId);
+            if (existingInfo.Any())
+            {
+                return await _inMemmoryRepositoryCache.GetMatchEventsAsync(gameId);
+            }
+            else
+            {
+                var response = await _matchEventApiRestRepository.GetAcbMatchEventAsync(gameId);
+                await _inMemmoryRepositoryCache.CreateMatchEventsAsync(gameId, response);
+                return response;
+            }
         }
     }
 }

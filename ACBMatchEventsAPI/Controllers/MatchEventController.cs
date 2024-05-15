@@ -26,7 +26,7 @@ namespace MatchEvent.Api.Controllers
             try
             {
                 var response = await _AAcbMatchEventService.GetPhpLeanAsync(gameId);
-                return Ok();
+                return Ok(response);
             }
             catch (Exception ex)
             {

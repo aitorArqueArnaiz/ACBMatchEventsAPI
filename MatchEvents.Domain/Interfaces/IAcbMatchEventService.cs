@@ -5,11 +5,11 @@ namespace MatchEvents.Domain.Interfaces
     public interface IAcbMatchEventService
     {
         /// <summary>
-        /// Method that calculates the php lead of the match.
+        /// Method that reduces the information received from ACB API, gets the resume.
         /// </summary>
         /// <param name="gameId">The game identifier.</param>
-        /// <returns>The match php lead.</returns>
-        Task<MatchEventInfo> GetPhpLeanAsync(int gameId);
+        /// <returns>The resume.</returns>
+        Task<IEnumerable<MatchEventInfo>> GetPhpLeanAsync(int gameId);
         /// <summary>
         /// Method that calculates the game winner/leader of the match.
         /// </summary>
