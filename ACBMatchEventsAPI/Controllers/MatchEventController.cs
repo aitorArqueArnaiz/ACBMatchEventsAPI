@@ -1,3 +1,4 @@
+using ACBMatchEventsAPI.Responses;
 using MatchEvents.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,7 +42,13 @@ namespace MatchEvent.Api.Controllers
         {
             try
             {
-                return Ok();
+                var response = await _AAcbMatchEventService.GetGameLeadersAsync(gameId);
+                var apiResponse = new GetTeamLeadersResponse()
+                {
+                    HomeLeaders = response.Item1,
+                    AwayLeaders = response.Item2
+                };
+                return Ok(apiResponse);
             }
             catch (Exception ex)
             {
