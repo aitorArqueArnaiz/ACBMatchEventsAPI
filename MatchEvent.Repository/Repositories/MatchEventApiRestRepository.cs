@@ -2,9 +2,6 @@
 using MatchEvents.Domain.Dtos;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
-using System.Security.Principal;
-using System.Text.Json.Nodes;
-
 namespace MatchEvent.Repository.Repositories
 {
     public class MatchEventApiRestRepository : IMatchEventApiRestRepository
@@ -17,6 +14,11 @@ namespace MatchEvent.Repository.Repositories
             return await GetMatchEventInformationAsyncAsync(gameId);
         }
 
+        public async Task<IEnumerable<MatchEventInfoExtended>> GetAcbMatchEventWithStatisticsAsync(int gameId)
+        {
+            return await GetMatchEventInformationWithStatisticsAsyncAsync(gameId);
+        }
+
         /// <summary>
         /// Gets the JSON content of the API Rest call.
         /// </summary>
@@ -26,6 +28,18 @@ namespace MatchEvent.Repository.Repositories
         {
             var userJson = await GetStringAsync(BaseUrl + "idMatch=" + gameId, Token);
             var user = JsonConvert.DeserializeObject<List<MatchEventInfo>>(userJson);
+            return user;
+        }
+
+        /// <summary>
+        /// Gets the JSON content of the API Rest call with player statistics.
+        /// </summary>
+        /// <param name="gameId"></param>
+        /// <returns></returns>
+        private async Task<IEnumerable<MatchEventInfoExtended>> GetMatchEventInformationWithStatisticsAsyncAsync(int gameId)
+        {
+            var userJson = await GetStringAsync(BaseUrl + "idMatch=" + gameId, Token);
+            var user = JsonConvert.DeserializeObject<List<MatchEventInfoExtended>>(userJson);
             return user;
         }
 

@@ -6,8 +6,7 @@ namespace MatchEvents.Domain.Dtos
     {
         [JsonProperty("id_competition")]
         public int? GameId { get; set; }
-        [JsonProperty("id_team_denomination")]
-        public long? TeamId { get; set; }
+        public Team Team { get; set; }
         [JsonProperty("id_license")]
         public long? PlayerLicense { get; set; }
         [JsonProperty("crono")]

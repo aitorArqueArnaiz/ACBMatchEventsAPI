@@ -48,8 +48,7 @@
               "RelativeToolTip": "..\\MatchEvents.Domain\\Dtos\\MatchEventInfoExtended.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAAAIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:05:25.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T09:05:25.516Z"
             },
             {
               "$type": "Document",
@@ -61,8 +60,7 @@
               "RelativeToolTip": "..\\MatchEvents.Domain\\Interfaces\\IAcbMatchEventService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:02:25.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T09:02:25.423Z"
             },
             {
               "$type": "Document",
@@ -74,8 +72,7 @@
               "RelativeToolTip": "..\\MatchEvent.Repository\\InMemmory\\InMemmoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T15:23:24.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T15:23:24.703Z"
             },
             {
               "$type": "Document",
@@ -87,8 +84,7 @@
               "RelativeToolTip": "..\\MatchEvent.Repository\\Repositories\\MatchEventApiRestRepository.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAewBAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T12:51:00.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T12:51:00.734Z"
             },
             {
               "$type": "Document",
@@ -100,8 +96,7 @@
               "RelativeToolTip": "..\\MatchEvents.Domain\\Services\\AcbMatchEventService.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAewB4AAACJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T12:41:18.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T12:41:18.581Z"
             },
             {
               "$type": "Document",
@@ -126,8 +121,7 @@
               "RelativeToolTip": "..\\MatchEvents.Domain\\Dtos\\MatchEventInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:05:43.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T09:05:43.424Z"
             }
           ]
         }
