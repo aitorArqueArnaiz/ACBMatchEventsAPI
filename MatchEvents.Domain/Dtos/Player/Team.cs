@@ -1,7 +1,6 @@
-﻿
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace MatchEvents.Domain.Dtos
+namespace MatchEvents.Domain.Dtos.Player
 {
     public class Team
     {

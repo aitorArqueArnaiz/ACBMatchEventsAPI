@@ -6,6 +6,9 @@ namespace MatchEvents.Domain.Services
 {
     public class AcbMatchEventService : IAcbMatchEventService
     {
+        private const long HomeTeam = 2503;
+        private const long AwayTeam = 2511;
+
         private readonly IMatchEventApiRestRepository _matchEventApiRestRepository;
         private readonly IRepository _inMemmoryRepositoryCache;
 
@@ -19,7 +22,15 @@ namespace MatchEvents.Domain.Services
 
         public async Task<long> GetGameBiggestLeadAsync(int gameId)
         {
-            throw new NotImplementedException();
+            long pointsDifference = 0;
+            var response = await _matchEventApiRestRepository.GetAcbMatchEventWithStatisticsAsync(gameId);
+            foreach (var match in response) 
+            {
+                var matchDiference = Math.Abs(match.ScoreLocal - match.ScoreVisitor);
+                if (pointsDifference < matchDiference)
+                    pointsDifference = matchDiference;
+            }
+            return pointsDifference;
         }
 
         public async Task<(IEnumerable<long>, IEnumerable<long>)> GetGameLeadersAsync(int gameId)
@@ -28,13 +39,13 @@ namespace MatchEvents.Domain.Services
             var awayLeaders = new List<long>();
             var playerMatchInfoWithStatistics = await _matchEventApiRestRepository.GetAcbMatchEventWithStatisticsAsync(gameId);
 
-            homeLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.Team.TeamId.Value == 2503)
+            homeLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.License != null && x.Team.TeamId.Value == HomeTeam)
                 .OrderByDescending(x => x.Statistics.Points)
-                .OrderBy(x => x.Statistics.Points).Select(x => x.Team.TeamId.Value).Distinct().ToList();
+                .OrderBy(x => x.Statistics.TotalRebound).Select(x => x.License.PlayerId).Distinct().ToList();
 
-            awayLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.Team.TeamId.Value == 2511)
+            awayLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.License != null && x.Team.TeamId.Value == AwayTeam)
                 .OrderByDescending(x => x.Statistics.Points)
-                .OrderBy(x => x.Statistics.Points).Select(x => x.Team.TeamId.Value).Distinct().ToList();
+                .OrderBy(x => x.Statistics.TotalRebound).Select(x => x.License.PlayerId).Distinct().ToList();
 
             return (homeLeaders, awayLeaders);
          }

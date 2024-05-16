@@ -63,7 +63,8 @@ namespace MatchEvent.Api.Controllers
         {
             try
             {
-                return Ok();
+                var response = await _AAcbMatchEventService.GetGameBiggestLeadAsync(gameId);
+                return Ok(response);
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MatchEvents.Domain.Dtos.Player;
+using Newtonsoft.Json;
 
 namespace MatchEvents.Domain.Dtos
 {
