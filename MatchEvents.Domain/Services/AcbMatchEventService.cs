@@ -22,10 +22,22 @@ namespace MatchEvents.Domain.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<int>> GetGameLeadersAsync(int gameId)
+        public async Task<(IEnumerable<long>, IEnumerable<long>)> GetGameLeadersAsync(int gameId)
         {
-            throw new NotImplementedException();
-        }
+            var homeLeaders = new List<long>();
+            var awayLeaders = new List<long>();
+            var playerMatchInfoWithStatistics = await _matchEventApiRestRepository.GetAcbMatchEventWithStatisticsAsync(gameId);
+
+            homeLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.Team.TeamId.Value == 2503)
+                .OrderByDescending(x => x.Statistics.Points)
+                .OrderBy(x => x.Statistics.Points).Select(x => x.Team.TeamId.Value).Distinct().ToList();
+
+            awayLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.Team.TeamId.Value == 2511)
+                .OrderByDescending(x => x.Statistics.Points)
+                .OrderBy(x => x.Statistics.Points).Select(x => x.Team.TeamId.Value).Distinct().ToList();
+
+            return (homeLeaders, awayLeaders);
+         }
 
         public async Task<IEnumerable<MatchEventInfo>> GetPhpLeanAsync(int gameId)
         {

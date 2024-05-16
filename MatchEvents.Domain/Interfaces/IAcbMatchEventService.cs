@@ -15,7 +15,7 @@ namespace MatchEvents.Domain.Interfaces
         /// </summary>
         /// <param name="gameId">The game idintifier.</param>
         /// <returns></returns>
-        Task<IEnumerable<int>> GetGameLeadersAsync(int gameId);
+        Task<(IEnumerable<long>, IEnumerable<long>)> GetGameLeadersAsync(int gameId);
         /// <summary>
         /// Method that calculates the biggest match winner.
         /// </summary>
