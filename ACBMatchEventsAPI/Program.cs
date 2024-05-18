@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 // Injection dependency for services and repositories
 builder.Services.AddScoped<IAcbMatchEventService, AcbMatchEventService>();
-builder.Services.AddScoped<IRepository, InMemmoryRepository>();
+builder.Services.AddScoped<IInMemmoryRepository, InMemmoryRepository>();
 builder.Services.AddScoped<IMatchEventApiRestRepository, MatchEventApiRestRepository>();
 
 var app = builder.Build();

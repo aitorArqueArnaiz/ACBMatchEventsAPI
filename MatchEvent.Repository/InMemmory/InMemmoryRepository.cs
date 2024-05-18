@@ -3,7 +3,7 @@ using MatchEvents.Domain.Interfaces;
 
 namespace MatchEvent.Repository.InMemmory
 {
-    public class InMemmoryRepository : IRepository
+    public class InMemmoryRepository : IInMemmoryRepository
     {
         private readonly IDictionary<int, IEnumerable<MatchEventInfo>> _dbData = new Dictionary<int, IEnumerable<MatchEventInfo>>();
 

@@ -1,20 +1,18 @@
 ﻿using MatchEvent.Domain.Interfaces;
 using MatchEvents.Domain.Dtos;
+using MatchEvents.Domain.Enums;
 using MatchEvents.Domain.Interfaces;
 
 namespace MatchEvents.Domain.Services
 {
     public class AcbMatchEventService : IAcbMatchEventService
     {
-        private const long HomeTeam = 2503;
-        private const long AwayTeam = 2511;
-
         private readonly IMatchEventApiRestRepository _matchEventApiRestRepository;
-        private readonly IRepository _inMemmoryRepositoryCache;
+        private readonly IInMemmoryRepository _inMemmoryRepositoryCache;
 
         public AcbMatchEventService(
             IMatchEventApiRestRepository matchEventApiRestRepository,
-            IRepository inMemmoryRepository)
+            IInMemmoryRepository inMemmoryRepository)
         {
             _matchEventApiRestRepository = matchEventApiRestRepository;
             _inMemmoryRepositoryCache = inMemmoryRepository;
@@ -39,11 +37,11 @@ namespace MatchEvents.Domain.Services
             var awayLeaders = new List<long>();
             var playerMatchInfoWithStatistics = await _matchEventApiRestRepository.GetAcbMatchEventWithStatisticsAsync(gameId);
 
-            homeLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.License != null && x.Team.TeamId.Value == HomeTeam)
+            homeLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.License != null && x.Team.TeamId.Value == (long)Teams.HomeTeam)
                 .OrderByDescending(x => x.Statistics.Points)
                 .OrderBy(x => x.Statistics.TotalRebound).Select(x => x.License.PlayerId).Distinct().ToList();
 
-            awayLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.License != null && x.Team.TeamId.Value == AwayTeam)
+            awayLeaders = playerMatchInfoWithStatistics.Where(x => x.Team != null && x.Statistics != null && x.License != null && x.Team.TeamId.Value == (long)Teams.AwayTeam)
                 .OrderByDescending(x => x.Statistics.Points)
                 .OrderBy(x => x.Statistics.TotalRebound).Select(x => x.License.PlayerId).Distinct().ToList();
 

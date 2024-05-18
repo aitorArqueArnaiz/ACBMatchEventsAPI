@@ -36,3 +36,5 @@ C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvents.Domain.dll
 C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvent.Repository.pdb
 C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\MatchEvents.Domain.pdb
 C:\GIT\ACBMatchEventsAPI\obj\Debug\net8.0\ACBMatchEventsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\GIT\ACBMatchEventsAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
